@@ -80,7 +80,7 @@ st.markdown(
 # ---------------------------------------------------
 # PROFİL TÜRÜNE GÖRE ANA EKRAN
 # ---------------------------------------------------
-st.markdown(f"## 📌 {profil} için ölçüleri girin:")
+st.markdown(f"##  {profil} için ölçüleri girin:")
 
 adet = st.number_input("Adet", min_value=1, value=1)
 
@@ -104,7 +104,7 @@ elif profil == "Boru":
 # ---------------------------------------------------
 # SONUÇ
 # ---------------------------------------------------
-st.markdown("## 📦 Hesaplanan Ağırlık:")
+st.markdown("##  Hesaplanan Ağırlık:")
 
 try:
     if profil == "Levha":
@@ -128,3 +128,4 @@ try:
 
 except:
     st.warning("Eksik veya hatalı ölçü girdiniz.")
+
